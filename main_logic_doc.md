@@ -4,13 +4,16 @@
 
 ```javascript
 lift = {
-    current_state: 'idle', // 'up', 'down', 'idle'
-    floors_going_to: [1, 5, 7], 
-    load: 3, // number of people in the lift
-    at_capacity: false, // Assuming the max capacity to be 25
-    capacity: 25, // Maximum number of people the lift can hold
-    distance_to_user: null, // Distance from lift's current position to the user's current floor
-    finishing_time: null // Estimated time to finish its current course
+        id = id;
+        current_state = 'idle'; // 'up', 'down', 'idle'
+        floors_going_to = floors_going_to;
+        current_floor = current_floor;
+        load = load; // number of people in the lift
+        at_capacity = load >= capacity; // True if the lift is at or over capacity
+        capacity = capacity; // Maximum number of people the lift can hold
+        distance_to_user = null; // Distance from lift's current position to the user's current floor
+        finishing_time = null; // Estimated time to finish its current course
+        updateDirection();
 }
 ```
 
